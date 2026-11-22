@@ -1,10 +1,10 @@
+import Footer from "./components/Footer";
 import { useState } from "react";
 import initialTickets from "./data/tickets.json";
 import Navbar from "./components/Navbar.jsx";
 import Banner from "./components/Banner.jsx";
 import TicketCard from "./components/TicketCard.jsx";
 import TaskStatus from "./components/TaskStatus.jsx";
-import Footer from "./components/Footer.jsx";
 
 function App() {
   const [tickets, setTickets] = useState(Array.isArray(initialTickets) ? initialTickets : []);
